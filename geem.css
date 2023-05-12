@@ -108,6 +108,37 @@ h6,
   );
 }
 
+/* START HEADER */
+.dark .menu-item:hover > .menu-link,
+.dark .menu-item.current > .menu-link {
+  color: #ffc107 !important;
+}
+
+#logo img {
+  height: 60px !important;
+}
+
+.sticky-header-shrink #header-wrap #logo img {
+  height: 35px !important;
+}
+
+#header .lang {
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .lang-img {
+  width: 40px;
+  cursor: pointer;
+}
+#header .lang-img img {
+  width: 100%;
+}
+/* END HEADER */
+
 /* START ABOUT US */
 
 #about-us {
@@ -138,6 +169,31 @@ h6,
 
 #about-us .fbox-content p {
   color: #fff;
+}
+
+#about-us .fbox-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-us .fbox-icon:hover i {
+  transform: rotate(180deg);
+}
+
+#about-us .fbox-icon i {
+  background: -webkit-linear-gradient(
+    45deg,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  transition: all ease 1s;
 }
 /* END ABOUT US */
 
@@ -422,3 +478,66 @@ h6,
 }
 
 /* END BLOG */
+
+/* START FORM */
+#form {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7035189075630253) 0%,
+      rgba(0, 0, 0, 0.7035189075630253) 100%
+    ),
+    url(./images/noithat/lux.1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#form #quick-contact-form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#form .sm-form-control {
+  border-width: 1px;
+}
+/* END FORM */
+
+/* START FOOTER */
+#footer .footer-information {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#footer .footer-logo {
+  width: 30% !important;
+  margin: auto;
+}
+/* END FOOTER */
+
+@media (max-width: 768px) {
+  .emphasis-title h1,
+  .emphasis-title h2,
+  .heading-block h1,
+  .heading-block h2,
+  .heading-block h3,
+  .heading-block h4 {
+    font-size: 25px;
+  }
+
+  #blog .blog-item-img {
+    height: 550px;
+  }
+
+  #blog .blog-item-content h3 {
+    font-size: 20px;
+  }
+
+  #blog .blog-item-content p {
+    font-size: 16px;
+  }
+
+  #form #quick-contact-form {
+    width: 100%;
+  }
+}
