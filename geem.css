@@ -433,6 +433,13 @@ h6,
 }
 /* END WHY CHOOSE */
 
+/* START CLIENT */
+#client .owl-carousel .owl-item img {
+  width: 60%;
+  margin: 0 auto;
+}
+/* END CLIENT */
+
 /* START TESTIMONIALS */
 #testimonial .dark .testimonial {
   background-color: #0a0a0a;
@@ -548,6 +555,9 @@ h6,
 /* END FORM */
 
 /* START FOOTER */
+#footer {
+  border-top: none;
+}
 #footer .footer-information {
   display: flex;
   flex-direction: column;
