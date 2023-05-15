@@ -8037,7 +8037,7 @@ body:not(.device-touch) .button.button-full strong {
 }
 .promo-dark {
   border: 0 !important;
-  background-color: #333;
+  background-color: #0a0a0a;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }

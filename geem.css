@@ -49,7 +49,7 @@ h6,
   border-radius: 0;
   border: 1px solid !important;
   border-image-slice: 1 !important;
-  border-width: 8px !important;
+  border-width: 5px !important;
   border-image-source: linear-gradient(
     45deg,
     #bf953f,
@@ -435,7 +435,7 @@ h6,
 
 /* START TESTIMONIALS */
 #testimonial .dark .testimonial {
-  background-color: #282828;
+  background-color: #0a0a0a;
   border: 1px solid;
   border-image-slice: 1;
   border-width: 4px;
@@ -558,11 +558,37 @@ h6,
   width: 30% !important;
   margin: auto;
 }
+
+.dark #copyrights,
+#copyrights.dark {
+  border-top: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    45deg,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+}
 /* END FOOTER */
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  .menu-link {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
 
 @media (max-width: 992px) {
   .promo h3 {
     text-align: center;
+  }
+
+  .promo-dark {
+    border: none !important;
   }
 }
 
