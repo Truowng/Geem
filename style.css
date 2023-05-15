@@ -2954,7 +2954,8 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 }
 .menu-item.current > .menu-link,
 .menu-item:hover > .menu-link {
-  color: #ffc107;
+  color: #999;
+ 
 }
 .mega-menu-content,
 .sub-menu-container {

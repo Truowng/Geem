@@ -110,10 +110,21 @@ h6,
 
 /* START HEADER */
 .dark .menu-item:hover > .menu-link,
+.dark .menu-item:hover > .menu-link *,
 .dark .menu-item.current > .menu-link,
 .menu-item.current > .menu-link,
 .menu-item:hover > .menu-link {
-  color: #ffc107 !important;
+  color: #999;
+  background: linear-gradient(
+    45deg,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #logo img {
@@ -138,6 +149,10 @@ h6,
 }
 #header .lang-img img {
   width: 100%;
+}
+
+#header .menu-link i {
+  width: fit-content;
 }
 /* END HEADER */
 
@@ -170,6 +185,20 @@ h6,
 
 .promo .contact-item img {
   width: 100%;
+}
+
+.text-warning {
+  background: linear-gradient(
+    0deg,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
 }
 /* END PROMO */
 
@@ -243,6 +272,20 @@ h6,
 }
 #counter h5 {
   text-align: center;
+}
+
+#counter .counter {
+  background: -webkit-linear-gradient(
+    90deg,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
 }
 /* END COUNTER */
 
