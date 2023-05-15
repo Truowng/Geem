@@ -114,7 +114,7 @@ h6,
 .dark .menu-item.current > .menu-link,
 .menu-item.current > .menu-link,
 .menu-item:hover > .menu-link {
-  color: #999;
+  color: #999 !important;
   background: linear-gradient(
     45deg,
     #bf953f,
