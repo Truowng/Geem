@@ -141,6 +141,38 @@ h6,
 }
 /* END HEADER */
 
+/* START PROMO */
+.promo .contact-item {
+  width: 65px;
+  padding: 15px;
+  border-radius: 80px;
+  background: linear-gradient(
+    45deg,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  transition: all ease 0.3s;
+}
+
+.promo .contact-item:hover {
+  transform: translateY(-10px);
+}
+
+.promo .contact-item svg {
+  width: 100%;
+  height: auto;
+
+  stroke: #000;
+}
+
+.promo .contact-item img {
+  width: 100%;
+}
+/* END PROMO */
+
 /* START ABOUT US */
 
 #about-us {
@@ -243,6 +275,7 @@ h6,
 
 #service .service-item-img img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   filter: brightness(0.6);
   transition: all ease 1s;
@@ -373,6 +406,11 @@ h6,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#why-choose .fbox-content h3 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
 }
 
 #why-choose .fbox-icon i,
@@ -521,6 +559,12 @@ h6,
   margin: auto;
 }
 /* END FOOTER */
+
+@media (max-width: 992px) {
+  .promo h3 {
+    text-align: center;
+  }
+}
 
 @media (max-width: 768px) {
   .emphasis-title h1,
