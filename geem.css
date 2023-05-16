@@ -352,6 +352,8 @@ h6,
 
 #project-architect .project-architect-item-content h3 {
   margin-bottom: 0;
+  text-align: center;
+  width: 80%;
 }
 
 #project-interior .project-interior-item {
@@ -404,6 +406,8 @@ h6,
 
 #project-interior .project-interior-item-content h3 {
   margin-bottom: 0;
+  text-align: center;
+  width: 80%;
 }
 
 #project-interior .button.button-border:not(.button-fill):hover {

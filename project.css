@@ -1,0 +1,59 @@
+/* START LIST PROJECT */
+#list-project .list-project-item {
+  position: relative;
+  height: 400px;
+}
+
+#list-project .list-project-item-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#list-project .list-project-item-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+#list-project .list-project-item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  transition: all ease 0.5s;
+  opacity: 0;
+}
+
+#list-project .list-project-item-content::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+  width: 90%;
+  height: 90%;
+}
+
+#list-project .list-project-item:hover .list-project-item-content {
+  opacity: 1;
+}
+
+#list-project .list-project-item-content h3 {
+  margin-bottom: 0;
+  text-align: center;
+  width: 80%;
+}
+
+#list-project .button.button-border:not(.button-fill):hover {
+  background-color: #444;
+}
+/* END LIST PROJECT */
