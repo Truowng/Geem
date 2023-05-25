@@ -189,16 +189,56 @@ h6,
 
 /* START ABOUT US */
 
-#about-us {
-  background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.7035189075630253) 0%,
-      rgba(0, 0, 0, 0.7035189075630253) 100%
-    ),
-    url(./images/noithat/lux12.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#about-us .heading-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#about-us .heading-block h2 {
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#about-us .heading-block::after {
+  display: none;
+}
+
+#about-us .heading-block .sub-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex: 1;
+  transform: translateY(-5px);
+}
+
+#about-us .heading-block .sub-title .text {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 0 20px;
+  margin-bottom: 0;
+  line-height: 0.9;
+  margin-left: 20px;
+  border-left: 1px solid #2e2e2e;
+}
+
+#about-us .heading-block .sub-title .line {
+  height: 2px;
+  flex: 1;
+  background-color: #7c7c7c;
+  margin: 0;
+  transform: translateY(-2px);
+}
+#about-us .about-us-content ul {
+  list-style: square;
+  padding-left: 30px;
+}
+
+#about-us .about-us-content ul li {
+  margin-bottom: 10px;
+}
+#about-us .about-us-content p {
+  text-align: justify;
 }
 
 #about-us .feature-box {
@@ -209,34 +249,6 @@ h6,
   margin: 0 5px;
 }
 
-#about-us .fbox-content p {
-  color: #fff;
-}
-
-#about-us .fbox-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about-us .fbox-icon:hover i {
-  transform: rotate(180deg);
-}
-
-#about-us .fbox-icon i {
-  background: -webkit-linear-gradient(
-    45deg,
-    #bf953f,
-    #fcf6ba,
-    #b38728,
-    #fbf5b7,
-    #aa771c
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
-  transition: all ease 1s;
-}
 /* END ABOUT US */
 
 /* START COUNTER */
@@ -634,5 +646,15 @@ h6,
 
   #form #quick-contact-form {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #about-us .heading-block .sub-title {
+    display: none;
+  }
+
+  #about-us .heading-block {
+    justify-content: center;
   }
 }
